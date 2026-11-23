@@ -15,3 +15,31 @@ Free real-time chat and tasks.
 ## First test
 
 Two people join the same workspace. One sends a message, and the other sees it without refreshing. They ask the AI to suggest a task, add it after reviewing it, and confirm that both people see when it is marked complete.
+
+## Development Plan
+
+### Core Features
+- AI-powered chat assistant
+- Shared workspaces for collaboration
+- Two or more users working together
+- Conversation history
+- Task management
+- Customizable AI settings
+
+### First Development Steps
+1. Set up the application structure.
+2. Create a basic chat interface.
+3. Connect the AI assistant.
+4. Add user accounts.
+5. Build shared workspaces.
+6. Test collaboration between two users.
+
+### First Test
+- Two people join the same workspace.
+- Both users can send messages.
+- Both users can see shared updates.
+- The AI assistant responds to messages.
+- Workspace information is saved correctly.
+
+### Next Step
+Build the first working version of Eternal D Collab.
