@@ -43,3 +43,39 @@ Two people join the same workspace. One sends a message, and the other sees it w
 
 ### Next Step
 Build the first working version of Eternal D Collab.
+
+## Technical Setup
+
+### Application Structure
+- Frontend: Web-based chat interface
+- Backend: Server for AI and collaboration
+- Database: User accounts, messages, and workspaces
+- AI Integration: Connect to an AI model using a secure API
+
+### User Accounts
+- Users can create accounts.
+- Users can securely log in.
+- Each user has a personal profile.
+- Users can create or join shared workspaces.
+
+### AI Assistant
+- Responds to user messages.
+- Helps users complete tasks.
+- Supports conversations within shared workspaces.
+- Can be expanded with new capabilities.
+
+### Security
+- Protect user information.
+- Keep API keys on the server.
+- Restrict workspace access to authorized users.
+- Store information securely.
+
+### First Working Prototype
+1. Create the application.
+2. Build the chat screen.
+3. Connect the AI assistant.
+4. Test sending and receiving messages.
+5. Add shared workspace functionality.
+
+### Next Development Goal
+Build a working AI chat prototype.
