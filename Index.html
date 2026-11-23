@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Eternal D Collab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    .app {
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #55d6be;
+    }
+    #chat {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 15px;
+      min-height: 300px;
+      margin-bottom: 15px;
+    }
+    .message {
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #334155;
+      border-radius: 8px;
+      overflow-wrap: anywhere;
+    }
+    .controls {
+      display: flex;
+      gap: 8px;
+    }
+    input {
+      flex: 1;
+      min-width: 0;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+    }
+    button {
+      padding: 12px;
+      background: #55d6be;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <h1>Eternal D Collab</h1>
+    <p>Your AI collaboration workspace</p>
+
+    <div id="chat">
+      <div class="message">
+        Welcome to Eternal D Collab!
+      </div>
+    </div>
+
+    <div class="controls">
+      <input id="message"
+             placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById("message");
+      const chat = document.getElementById("chat");
+      const text = input.value.trim();
+
+      if (!text) return;
+
+      const message = document.createElement("div");
+      message.className = "message";
+      message.textContent = "You: " + text;
+      chat.appendChild(message);
+
+      input.value = "";
+    }
+  </script>
+</body>
+</html>
